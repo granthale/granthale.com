@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const favicon = require('serve-favicon');
+// const favicon = require('serve-favicon');
+// app.use(favicon('public/favicon.ico'));
 
 app.set('view engine', 'ejs')
 app.use(express.static("public"))
-// app.use(express.urlencoded( {extended:true} )) // Allows you to parse body
-// app.use(express.json()) // Allows you to parse JSON
-app.use(favicon('public/favicon.ico'));
+app.use(express.urlencoded( {extended:true} )) // Allows you to parse body
+app.use(express.json()) // Allows you to parse JSON
 
 app.get('/', function(req, res) {
     res.render(__dirname + '/views/pages/index.ejs');
@@ -15,8 +15,8 @@ app.get('/', function(req, res) {
 const aboutRouter = require('./routes/about')
 app.use('/about', aboutRouter)
 
-const blogRouter = require('./routes/blog')
-app.use('/blog', blogRouter)
+const writingRouter = require('./routes/writing')
+app.use('/writing', writingRouter)
 
 const bookshelfRouter = require('./routes/bookshelf')
 app.use('/bookshelf', bookshelfRouter)
