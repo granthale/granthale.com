@@ -9,7 +9,7 @@ app.use(express.urlencoded( {extended:true} )) // Allows you to parse body
 app.use(express.json()) // Allows you to parse JSON
 
 app.get('/', function(req, res) {
-    res.render(__dirname + '/views/pages/about.ejs');
+    res.render(__dirname + '/views/pages/index.ejs');
   });
 
 const aboutRouter = require('./routes/about')
