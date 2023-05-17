@@ -2,35 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grant Hale</title>
+  <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-  <%- include('../partials/sidebar.ejs') %>
-  <div id="left">&nbsp;</div>
-  <div id="content"> 
-    <div id="content">
-      <h1> Grant Hale </h1>
-      <br>
-      <div style="display:flex; align-items:top;">
-        <img src="profile.jpg" alt="Profile" height="300" style="margin-right: 10px;">
-        <div id="content">
+  <%- include('../partials/menu.ejs') %>
+    <div class="content">
+      <div class="container">
+        <img src="Profile.jpg" alt="Profile" height="300px">
+        <div class="child">
           <p> My name is Grant and I'm 22 years old. </p>
           <p> I love to grapple with challenging and interesting ideas - especially those in computer science.</p>
           <p> During the summer of 2023, I'll be in Chicago (in May), Iceland, Amsterdam, Norway (in June) and San Francisco (in July). I'm always looking for people to meet and projects to work on, feel free to reach out! </p>
-          <!-- <p> Here is my <a href="https://github.com/granthale">github</a></p> -->
         </div>
       </div>
-      <br><br>
-      <b> Some things that I believe: </b>
-        <ul>
-          <li> Curiosity can be cultivated </li>
-          <li> Thinking is a learned mental habit </li>
-          <li> Creating, learning, and playing are the best uses of our time </li>
-          <li> Nothing with longterm value can (or should?) be done without others </li>
-          <li> Happiness is a deliberate choice that can be trained day to day </li>
-        </ul>
-  <!-- <%- include('../partials/footer.ejs') %> -->
+    <br>
+    <b> Some things that I believe: </b>
+    <ul>
+      <li> Curiosity can be cultivated </li>
+      <li> Thinking is a learned mental habit </li>
+      <li> Creating, learning, and playing are the best uses of our time </li>
+      <li> Nothing with longterm value can (or should?) be done without others </li>
+      <li> Happiness is a deliberate choice that can be trained day to day </li>
+    </ul>
+    </div>
 </body>
+</html>

@@ -8,9 +8,8 @@ app.use(express.static("public"))
 app.use(express.urlencoded( {extended:true} )) // Allows you to parse body
 app.use(express.json()) // Allows you to parse JSON
 
-app.get('/', function(req, res) {
-    res.render(__dirname + '/views/pages/index.ejs');
-  });
+const indexRouter = require('./routes/index')
+app.use('/', indexRouter)
 
 const aboutRouter = require('./routes/about')
 app.use('/about', aboutRouter)

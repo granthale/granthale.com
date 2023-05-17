@@ -4,32 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/index.css">
   <title>Grant Hale</title>
 </head>
 <body>
-  <%- include('../partials/sidebar.ejs') %>
-  <div id="left">&nbsp;</div>
-  <div id="content"> 
-    <div id="content">
-      <h1> About </h1>
-      <br>
-      <div style="display:flex; align-items:top;">
-        <img src="profile.jpg" alt="Profile" height="300" style="margin-right: 10px;">
-        <div id="content">
+  <%- include('../partials/menu.ejs') %>
+    <div class="content">
+      <div class="container">
+        <img src="Profile.jpg" alt="Profile" height="300px">
+        <div class="child">
           <p> My name is Grant and I'm 22 years old. </p>
           <p> I love to grapple with challenging and interesting ideas - especially those in computer science.</p>
           <p> During the summer of 2023, I'll be in Chicago (in May), Iceland, Amsterdam, Norway (in June) and San Francisco (in July). I'm always looking for people to meet and projects to work on, feel free to reach out! </p>
-          <!-- <p> Here is my <a href="https://github.com/granthale">github</a></p> -->
         </div>
       </div>
-      <br><br>
+    <br>
       <b> In my spare time, you'll probably find me: </b>
         <ul>
-          <li> <a href="https://podcasters.spotify.com/pod/show/surfacetensionpod">Talking </a> </li>
-          <li> <a href="https://github.com/granthale">Coding</a> </li>
           <li> <a href="https://www.granthale.com/bookshelf">Reading</a> </li>
+          <li> Writing </li>
+          <li> <a href="https://github.com/granthale">Coding</a> </li>
           <li> Running </li>
+          <li> <a href="https://podcasters.spotify.com/pod/show/surfacetensionpod">Talking </a> </li>
         </ul>
-  <!-- <%- include('../partials/footer.ejs') %> -->
 </body>
