@@ -6,7 +6,7 @@
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lessc public/index.less public/index.css"
   },
   "keywords": [],
   "author": "",
