@@ -8,17 +8,41 @@
 </head>
 <body>
   <%- include('../partials/navbar.ejs') %>
-      <p> These are some people that I have consistently learned from or respect: </p>
-      <br>
-      <ul>
-        <li><a href="http://paulgraham.com/">Paul Graham</a></li>
-        <li> Charlie Munger </li>
-        <li><a href="https://patrickcollison.com/">Patrick Collison</a></li>
-        <li><a href="https://www.fooledbyrandomness.com/">Nassim Taleb</a></li>
-        <li><a href="https://nav.al/">Naval Ravikant</a></li>
-        <li> Richard Feynman </li>
-        <li><a href="https://en.wikipedia.org/wiki/Frank_Oppenheimer">Frank Oppenheimer</a></li>
-        <li><a href="https://www.amazon.com/Dream-Machine-M-Mitchell-Waldrop/dp/1732265119">J.C.R. Licklider</a></li>
-        <li><a href="https://waitbutwhy.com/">Tim Urban</a></li>
-      </ul>
+      <div class="px-4 py-1 my-1 text-left">
+        <h1 class="display-5 fw-bold text-body-emphasis">People!</h1>
+        <div class="col-lg-10 ml-auto">
+          <p class="lead mb-4">These are people that I have consistently learned from or respect</p>
+        </div>
+      </div>
+          <div class="container">
+            <div class="list-group mk-4 ml-auto">
+              <a href="http://paulgraham.com/">
+                <button type="button" class="list-group-item list-group-item-action">Paul Graham</button>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Charlie_Munger">
+                <button type="button" class="list-group-item list-group-item-action">Charlie Munger</button>
+              </a>
+              <a href="https://patrickcollison.com/">
+                <button type="button" class="list-group-item list-group-item-action">Patrick Collison</button>
+              </a>
+              <a href="https://www.fooledbyrandomness.com/">
+                <button type="button" class="list-group-item list-group-item-action">Nassim Taleb</button>
+              </a>
+              <a href="https://nav.al/">
+                <button type="button" class="list-group-item list-group-item-action">Naval Ravikant</button>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Richard_Feynman">
+                <button type="button" class="list-group-item list-group-item-action">Richard Feynman</button>
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Frank_Oppenheimer">
+                <button type="button" class="list-group-item list-group-item-action">Tim Urban</button>
+              </a>
+              <a href="https://waitbutwhy.com/">
+                <button type="button" class="list-group-item list-group-item-action">Tim Urban</button>
+              </a>
+              <a href="https://www.amazon.com/Dream-Machine-M-Mitchell-Waldrop/dp/1732265119">
+                <button type="button" class="list-group-item list-group-item-action">J.C.R. Licklider</button>
+              </a>
+            </div>
+      </div>
 </body>
