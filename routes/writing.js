@@ -1,11 +1,23 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.render("pages/writing")
+router.get('/essays', (req, res) => {
+    res.render("pages/writingEssays")
 })
 
-router.get('/:blogPost', (req, res) => {
+router.get('/explanations', (req, res) => {
+    res.render("pages/writingExplanations")
+})
+
+router.get('/ilike', (req, res) => {
+    res.render("pages/writingILike")
+})
+
+router.get('/explanations/:blogPost', (req, res) => {
+    res.render("writing/" + req.params.blogPost)
+})
+
+router.get('/essays/:blogPost', (req, res) => {
     res.render("writing/" + req.params.blogPost)
 })
 
