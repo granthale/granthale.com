@@ -20,9 +20,6 @@ app.use('/writing', writingRouter)
 const bookshelfRouter = require('./routes/bookshelf')
 app.use('/bookshelf', bookshelfRouter)
 
-const linksRouter = require('./routes/links')
-app.use('/links', linksRouter)
-
 const peopleRouter = require('./routes/people')
 app.use('/people', peopleRouter)
 
