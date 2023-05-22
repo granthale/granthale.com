@@ -1,12 +1,13 @@
 const express = require('express')
 const app = express()
-// const favicon = require('serve-favicon');
-// app.use(favicon('public/favicon.ico'));
+
+const favicon = require('serve-favicon');
+app.use(favicon('public/favicon.ico'));
 
 app.set('view engine', 'ejs')
 app.use(express.static("public"))
 app.use(express.urlencoded( {extended:true} )) // Allows you to parse body
-app.use(express.json()) // Allows you to parse JSON
+// app.use(express.json()) // Allows you to parse JSON
 
 const indexRouter = require('./routes/index')
 app.use('/', indexRouter)
