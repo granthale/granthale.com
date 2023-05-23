@@ -6,46 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grant Hale</title>
   </head>
-  <body style="background-color: rgba(176, 196, 222, 0.855)">
-    <%- include('../partials/navbar.ejs') %>
+  <% var navbarColor = '#C8FFD4'; %>
+  <body style="background-color: <%= navbarColor %>">
+    <%- include('../partials/navbar.ejs', { navbarColor: navbarColor }) %>
     <div class="px-4 py-1 my-1 text-left">
       <h1 class="display-5 fw-bold text-body-emphasis">About!</h1>
+      <br>
+      <h3 class="display-10 text-body-emphasis">Education</h3>
       <div class="col-lg-10 ml-auto">
         <p class="lead mb-4">
           I graduated in May 2023 from UIUC with a major in finance and a minor
-          in computer science. To those who say college is becoming outdated, I
-          truly don't know where I would be without the people that I met and
-          the discipline that I developed.
+          in computer science. 
         </p>
-        <p class="lead mb-4">
-          Now that I've graduated, I've got about { <span id="days"></span> } days and counting until I
-          start work for Boston Consulting Group as an Associate. During the
-          summer of 2023, I'll be in Chicago (in May), Iceland, Amsterdam,
-          Norway and Italy (in June) and San Francisco (in July).
+        <p class="lead mb-4">To those who say college is becoming outdated, I
+          truly don't know where I would be without the people I met and
+          the (main)character that I developed.
         </p>
-        <br />
+        <h3 class="display-10 text-body-emphasis">Time & Location</h3>
         <p class="lead mb-4">
-          I have a very hard time sitting still, here are the things that I'm
+          I've got  ~<span id="days"></span> days and counting until I
+          start work for Boston Consulting Group as an Associate. Here is where I'll be from now until then:
+          <ul class="lead mb-4">
+            <li>May - Chicago</li>
+            <li>June - Iceland, Amsterdam, Norway, Germany, Italy</li>
+            <li>July - San Francisco</li>
+            <li>August - San Francisco, Chicago</li>
+            <li>September, October, November, December - TBD</li>
+          </ul>
+        </p>
+        <h3 class="display-10 text-body-emphasis">Energy</h3>
+        <p class="lead mb-4">
+          Here are the things that I'm
           currently putting energy into:
         </p>
         <ul class="lead mb-4">
           <li>Writing @ least 15 minutes a day - ideally closer to an hour</li>
           <li>
-            Developing this website from scratch - it's been an way to document
+            Developing this website from scratch - it's been an awesome way to document
             where I'm currently at and the things that I'm excited about for the
             future
           </li>
           <li>
-            Learning linear algebra for fun and to apply to a fun side project
+            Learning linear algebra to stay sharp and to hopefully apply to a fun side project
           </li>
+          <li>Recording podcast episodes for Surface Tension with incredible people</li>
           <li>Travelling & experiencing different cultures</li>
           <li>Meeting people & developing closer relationships</li>
         </ul>
+
+        <p class="lead mb-4"> I'm a major believer that cool things usually don't happen without other people. I'm always down to meet new people and work on new things!</p>
         <!-- What my values are -->
         <!-- What I've committed to... -->
         <!-- What are some fundamental truths that I believe -->
         <script>
-          console.log("Ran");
           window.addEventListener("DOMContentLoaded", function () {
             var currentDate = new Date();
             var targetDate = new Date("2024-01-01");

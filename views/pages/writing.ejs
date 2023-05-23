@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Writing | Grant Hale</title>
 </head>
-<body style="background-color:rgba(43, 147, 74, 0.352);">
-  <%- include('../partials/navbar.ejs') %>
+<% var navbarColor = '#B8E8FC'; %>
+<body style="background-color: <%= navbarColor %>">
+  <%- include('../partials/navbar.ejs', { navbarColor: navbarColor }) %>
       <!-- <h1> Writing </h1> -->
   <div class="px-4 py-1 my-1 text-left">
     <h1 class="display-5 fw-bold text-body-emphasis">Writing!</h1>
 
-    <p class="lead mb-4">Stay tuned for essays and explanations</p>
+    <p class="lead mb-4">I'm currently working on writing in two different threads:<br><br>
+      1. Essays paul-graham style to help me understand different areas of my life and hopefully provide value to you as well <br>
+      2. Explanations of interesting things</p>
+    <p class="lead mb-4">
+      Coming soon!
+    </p>
   </div>
 </body>

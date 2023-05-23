@@ -18,14 +18,8 @@ app.use('/about', aboutRouter)
 const writingRouter = require('./routes/writing')
 app.use('/writing', writingRouter)
 
-const bookshelfRouter = require('./routes/bookshelf')
-app.use('/bookshelf', bookshelfRouter)
-
-const inspirationRouter = require('./routes/inspiration')
-app.use('/inspiration', inspirationRouter)
-
-const questionsRouter = require('./routes/questions')
-app.use('/questions', questionsRouter)
+const influencesRouter = require('./routes/influences')
+app.use('/influences', influencesRouter)
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {

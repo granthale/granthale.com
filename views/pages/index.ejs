@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grant Hale</title>
 </head>
-<body style="background-color:wheat ">
-  <%- include('../partials/navbar.ejs') %>
+<% var navbarColor = '#FDFDBD'; %>
+<body style="background-color: <%= navbarColor %>">
+  <%- include('../partials/navbar.ejs', { navbarColor: navbarColor }) %>
   <div class="px-4 py-5 my-5 text-center">
     <!-- <img class="d-block mx-auto mb-4" src="public/value.png" alt="" width="72" height="57"> -->
+    
     <!-- Element to contain animated typing -->
     <span id="element"></span>
-
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <!-- Setup and start animation! -->
     <script>
       var typed = new Typed('#element', {
