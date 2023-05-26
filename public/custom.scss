@@ -1,0 +1,25 @@
+// https://blog.hubspot.com/website/how-to-override-bootstrap-css
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    --bs-navbar-hover-color: #6610f2;
+    z-index: 9999;
+}
+
+body {
+    margin-top: 70px;
+    overflow-y: scroll;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+// https://codepen.io/sosuke/pen/Pjoqqp  
+.hover-image {
+    transition: filter 1s;
+    &:hover {
+        filter: brightness(0%) saturate(0%) invert(11%) sepia(97%) saturate(6298%) hue-rotate(266deg) brightness(91%) contrast(109%);
+    }
+}
